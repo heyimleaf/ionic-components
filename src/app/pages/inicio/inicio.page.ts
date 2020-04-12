@@ -7,9 +7,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioPage implements OnInit {
 
+  componentes: Componente[] = [
+  {
+    icone: 'heart-outline',
+    nome: 'Alerta',
+    link: '/alert'
+  },
+
+  {
+    icone: 'moon-outline',
+    nome: 'Abas',
+    link: '/action-sheet'
+  },
+];
+
   constructor() { }
 
   ngOnInit() {
   }
 
+}
+
+interface Componente{
+    icone: string;
+    nome: string;
+    link: string;
+    
 }

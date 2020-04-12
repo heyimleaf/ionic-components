@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActionSheetController, AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-action-sheet',
@@ -7,8 +8,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActionSheetPage implements OnInit {
 
-  constructor() { }
+  constructor(public alertController: AlertController) { }
 
+    async presentActionSheet() {
+      const alert = await this.alertController.create({
+        header: 'Alert',
+        subHeader: 'Subtitle',
+        message: 'This is an alert message',
+        buttons: [
+          {
+            text: 'Cancel',
+            role: 'cancel',
+            cssClass: 'secondary',
+            handler: () => {
+              console.log('Confirm Cancel: blah');
+            }
+          }, {
+            text: 'Okay',
+            handler: () => {
+              console.log('Confirm Okay');
+            }
+          }
+        ]
+      });
+      await alert.present();
+    }
+  
   ngOnInit() {
   }
 
