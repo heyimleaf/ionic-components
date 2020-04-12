@@ -25,6 +25,11 @@ export class InicioPage implements OnInit {
     nome: 'Cards',
     link: '/cards'
   },
+  {
+    icone: 'calendar',
+    nome: 'Datas',
+    link: '/datas'
+  },
 ];
 
   constructor() { }
