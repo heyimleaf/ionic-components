@@ -36,6 +36,12 @@ export class InicioPage implements OnInit {
     nome: 'Grids',
     link: '/grid'
   },
+
+  {
+    icone: 'person-add-outline',
+    nome: 'Inputs',
+    link: '/input'
+  },
 ];
 
   constructor() { }
