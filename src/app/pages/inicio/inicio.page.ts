@@ -19,6 +19,12 @@ export class InicioPage implements OnInit {
     nome: 'Abas',
     link: '/action-sheet'
   },
+
+  {
+    icone: 'card',
+    nome: 'Cards',
+    link: '/cards'
+  },
 ];
 
   constructor() { }
