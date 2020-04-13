@@ -31,6 +31,14 @@ const routes: Routes = [
     path: 'input',
     loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
   },
+  {
+    path: 'slides',
+    loadChildren: () => import('./pages/slides/slides.module').then( m => m.SlidesPageModule)
+  },
+  {
+    path: 'toast',
+    loadChildren: () => import('./pages/toast/toast.module').then( m => m.ToastPageModule)
+  },
 ];
 
 @NgModule({

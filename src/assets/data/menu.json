@@ -1,0 +1,47 @@
+[
+    {
+      "icone": "heart-outline",
+      "nome": "Alerta",
+      "link": "/alert"
+    },
+  
+    {
+      "icone": "moon-outline",
+      "nome": "Abas",
+      "link": "/action-sheet"
+    },
+  
+    {
+      "icone": "card",
+      "nome": "Cards",
+      "link": "/cards"
+    },
+    {
+      "icone": "calendar",
+      "nome": "Datas",
+      "link": "/datas"
+    },
+  
+    {
+      "icone": "albums-outline",
+      "nome": "Grids",
+      "link": "/grid"
+    },
+  
+    {
+      "icone": "person-add-outline",
+      "nome": "Inputs",
+      "link": "/input"
+    },
+    {
+      "icone": "tv-outline",
+      "nome": "Slides",
+      "link": "/slides"
+    },
+
+    {
+      "icone": "chatbox-outline",
+      "nome": "Toast",
+      "link": "/toast"
+    }
+  ]
